@@ -97,50 +97,35 @@
             padding: 60px 20px;
         }
 
-        .footer {
-            background-color: #2832ff; /* changed */
-            color: white;
-            padding: 40px 20px;
-        }
+        /* Footer link hover effect */
+footer a.text-white:hover {
+    color: #1ed600 !important; /* Green hover effect */
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
 
-        .footer input[type="email"] {
-            max-width: 300px;
-        }
+/* Footer social icons hover effect */
+footer a i:hover {
+    transform: scale(1.2);
+    color: #1ed600;
+    transition: all 0.3s ease;
+}
 
-        .footer a i {
-            transition: transform 0.3s ease;
-        }
+footer .btn-success {
+    transition: all 0.3s ease;
+    transform: scale(1);
+    background-color:rgb(27, 184, 3);
+    border: none;
+}
 
-        .footer a:hover i {
-            transform: scale(1.2);
-            color: #1ed600;
-        }
+footer .btn-success:hover {
+    transform: scale(1.08);
+    background-color: #1ed600;
+    box-shadow: 0 0.5rem 1rem rgba(29, 214, 78, 0.4);
+    color: white;
+}
 
-        .footer-link {
-            color: white;
-            text-decoration: none;
-            transition: color 0.3s ease, transform 0.3s ease;
-        }
-
-        .footer-link:hover {
-            color: #1ed600;
-            transform: translateX(5px);
-            text-decoration: none;
-        }
-
-        .footer .btn-primary {
-            background-color: #1ed600;
-            border: none;
-            font-weight: 500;
-            transition: all 0.3s ease;
-        }
-
-        .footer .btn-primary:hover {
-            transform: scale(1.08);
-            background-color: #1ed600;
-            box-shadow: 0 0.5rem 1rem rgba(29, 214, 78, 0.4);
-            color: #fff;
-        }
+       
     </style>
 </head>
 
@@ -194,46 +179,86 @@
     </div>
 
     <!-- Footer -->
-    <footer class="footer section-animate">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <h5>Column 1</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="footer-link">Link 1</a></li>
-                        <li><a href="#" class="footer-link">Link 2</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <h5>Column 2</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="footer-link">Link 3</a></li>
-                        <li><a href="#" class="footer-link">Link 4</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <h5>Column 3</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="footer-link">Link 5</a></li>
-                        <li><a href="#" class="footer-link">Link 6</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <h5>Subscribe</h5>
-                    <form>
-                        <input type="email" class="form-control mb-2" placeholder="Enter your email">
-                        <button class="btn btn-sm btn-primary w-100 mb-3">Submit</button>
-                    </form>
-                    <!-- Social Icons -->
-                    <div class="d-flex gap-3">
-                        <a href="#" class="text-white fs-5" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="text-white fs-5" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="text-white fs-5" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
+    <!-- Footer -->
+<!-- Footer -->
+<footer class="text-center text-lg-start text-white" style="background-color: #001f4d;">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4">
+    <div class="me-5 d-none d-lg-block">
+      <span>Get connected with us on social networks:</span>
+    </div>
+    <div>
+      <a href="#" class="me-4 text-white">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="#" class="me-4 text-white">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="#" class="me-4 text-white">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="#" class="me-4 text-white">
+        <i class="fab fa-instagram"></i>
+      </a>
+      
+    </div>
+  </section>
+
+  <!-- Section: Links -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <div class="row mt-3">
+        <!-- Column 1 -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i>Care Group
+          </h6>
+          <p>
+            We provide a seamless healthcare experience by connecting you with top medical professionals in just a few clicks.
+          </p>
         </div>
-    </footer>
+
+        <!-- Column 2 -->
+<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+  <h6 class="text-uppercase fw-bold mb-4">Categories</h6>
+  <p><a href="#!" class="text-white text-decoration-none">Find Doctors</a></p>
+  <p><a href="#!" class="text-white text-decoration-none">Book Appointments</a></p>
+  <p><a href="#!" class="text-white text-decoration-none">Teleconsultation</a></p>
+  <p><a href="#!" class="text-white text-decoration-none">Health Packages</a></p>
+</div>
+
+
+<!-- Column 3 -->
+<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+  <h6 class="text-uppercase fw-bold mb-4">Specialist Doctors</h6>
+  <p><a href="#!" class="text-white text-decoration-none">Dr. Anjali Mehra</a></p>
+  <p><a href="#!" class="text-white text-decoration-none">Dr. Ravi Patel</a></p>
+  <p><a href="#!" class="text-white text-decoration-none">Dr. Sneha Kumar</a></p>
+  <p><a href="#!" class="text-white text-decoration-none">Dr. Arjun Rao</a></p>
+</div>
+
+
+        <!-- Column 4 (Replaced Contact with Email Subscription Form) -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">Subscribe to our newsletter</h6>
+          <form>
+            <div class="form-outline mb-3">
+              <input type="email" class="form-control" placeholder="Enter your email" required />
+            </div>
+            <button type="submit" class="btn btn-success btn-block">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(255, 255, 255, 0.05);">
+    © 2025 Care Group
+  </div>
+</footer>
+
+<!-- Footer -->
 
     <!-- Scroll animation JS -->
     <script>
@@ -252,4 +277,4 @@
 
 </body>
 
-</html>
+    </html>
